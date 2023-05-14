@@ -32,7 +32,7 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Shows  the BnB  command prompt for the models used.
+    """Shows  the HBnB  command prompt for the models used.
     Attributes:
         prompt (str): The command prompt.
     """
