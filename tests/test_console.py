@@ -84,6 +84,8 @@ class TestConsoleClass(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as help_val:
             HBNBCommand().onecmd("help update")
             self.assertTrue(len(help_val.getvalue()) > 0)
+        with patch('sys.stdout', new=StringIO()) as f:
+             HBNBCommand().onecmd("help show")
 
     def test_create_good(self):
         """ Test the create function """
